@@ -180,9 +180,6 @@ if (array_key_exists('v', $options)) {
     exit;
 }
 
-// If XDebug is enabled, restart without it
-(new \Composer\XdebugHandler(\Composer\Factory::createOutput()))->check();
-
 if (isset($options['i'])) {
     if (file_exists('psalm.xml')) {
         die('A config file already exists in the current directory' . PHP_EOL);
