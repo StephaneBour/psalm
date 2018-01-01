@@ -177,9 +177,6 @@ foreach ($autoload_files as $file) {
 }
 
 if (array_key_exists('v', $options)) {
-    /** @var string */
-    $version = \PackageVersions\Versions::getVersion('vimeo/psalm');
-    echo 'Psalm ' . $version . PHP_EOL;
     exit;
 }
 
